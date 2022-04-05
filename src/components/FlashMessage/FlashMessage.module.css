@@ -1,0 +1,49 @@
+.FlashMessageSuccess {
+	position: fixed;
+	width: 440px;
+	height: 132px;
+	background: #B5FFA2;
+	border-radius: 32px;
+	padding: 16px;
+	right: 40px;
+	bottom: 50px;
+	z-index: 10;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.FlashMessageSuccess.active {
+	opacity: 1;
+	pointer-events: all;
+}
+.text {
+	width: 200px;
+	margin-left: 130px;
+}
+.okicn {
+	position: absolute;
+	top: -42px;
+}
+.greenicn {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-bottom-left-radius: 32px;
+}
+.ecx {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	border: none;
+	background: transparent;
+	top: 24px;
+	right: 24px;
+	cursor: pointer;
+}
+
+@media (max-width: 550px) {
+	.text {
+		margin-left: 85px;
+		width: 130px;
+	}
+}

@@ -1,0 +1,21 @@
+.header {
+	display: flex;
+	padding: 32px 80px;
+	align-items: center;
+	background: #FFFFFF;
+}
+h1 {
+	margin-left: 20px;
+}
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo > svg {
+	display: block;
+	margin-top: 5px;
+}
+button {
+	margin-left: auto;
+	width: 200px;
+}

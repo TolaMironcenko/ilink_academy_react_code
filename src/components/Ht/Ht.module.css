@@ -1,0 +1,34 @@
+.h1 {
+	font-family: 'TRIAL';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 124px;
+	line-height: 148px;
+	color: #333333;
+}
+.h2 {
+	font-family: 'TRIAL';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 68px;
+	line-height: 88px;
+	letter-spacing: -0.0124em;
+	color: #333333;
+}
+.h3 {
+	font-family: 'TRIAL';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+	color: #333333;
+}
+.h4 {
+	font-family: 'TRIAL';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: -0.0124em;
+	color: #333333;
+}

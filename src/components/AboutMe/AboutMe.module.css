@@ -1,0 +1,60 @@
+.AboutMe {
+	position: absolute;
+	top: -50px;
+	left: 519px;
+	background: #FFFFFF;
+	width: 760px;
+	height: 385px;
+	padding: 40px;
+}
+.name {
+	font-family: 'Factor A TRIAL';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 0;
+	color: #585CC6;
+}
+.info {
+	/* position: relative; */
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	padding: 0;
+}
+.li {
+	margin-right: 40px;
+}
+.p {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-size: 18px;
+	line-height: 24px; 
+	letter-spacing: 0.01em;
+	color: #333333;
+	width: 610px;
+}
+.li > svg {
+	margin-left: 5px;
+	width: 20px;
+	height: 20px;
+}
+.desc {
+	display: flex;
+	align-items: center;
+}
+.desc > svg {
+	margin-right: 15px;
+}
+.date {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.01em;
+	color: #8A8A8A;
+}

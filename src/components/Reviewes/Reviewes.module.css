@@ -1,0 +1,22 @@
+.Reviewes {
+	background: #FFFFFF;
+	width: 1200px;
+	height: 525px;
+	padding: 65px 50px;
+	position: relative;
+	margin-bottom: 100px;
+	position: relative;
+}
+.feedbacks {
+	display: flex;
+	margin-top: 100px;
+	padding: -15px;
+	overflow: hidden;
+}
+.navigation {
+	align-items: center;
+	z-index: 5;
+	position: absolute;
+	bottom: 0;
+	right: -150px;
+}

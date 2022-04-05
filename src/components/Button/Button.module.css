@@ -1,0 +1,109 @@
+.btn1 {
+	position: relative;
+	border-radius: 2px;
+	width:124px;
+	height: 52px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+	background-color: white;
+	padding: 17px 28px;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 18px;
+}
+.btn1:hover > .hr {
+	opacity: 0.1;
+	background: #585CC6;
+}
+.btn1:active {
+	background-color: #C2C4FF;
+}
+.btn1:active > .hr {
+	background-color: #C2C4FF;
+}
+.btn1:disabled {
+	color: #333333;
+	background: #E0E0E0;
+	cursor: auto;
+}
+.btn1:disabled > .hr {
+	z-index: -1;
+}
+.hr {
+	transition: 0.5s;
+	position: absolute;
+	left: 0;
+	right: 26.61%;
+	top: 0;
+	height: 100%;
+	border-radius: 2px;
+}
+.btn2 {
+	position: relative;
+	border-radius: 2px;
+	width:124px;
+	height: 52px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+	background: #585CC6;
+	color: #FFFFFF;
+	padding: 17px 28px;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 18px;
+}
+.hr2 {
+	position: absolute;
+	width: 70px;
+	height: 52px;
+	left: 0px;
+	top: 0px;
+	border-radius: 2px;
+}
+.btn2:hover {
+	background: #696DC8;
+}
+.btn2:active {
+	background-color: #797DDF;
+}
+.btn2:disabled {
+	background: #8A8A8A;
+	cursor: auto;
+}
+.btn2icn {
+	padding: 17px 28px;
+	position: relative;
+	border-radius: 2px;
+	width: 200px;
+	height: 52px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+	background: #585CC6;
+	color: #FFFFFF;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 18px;
+}
+.btn2icn > svg {
+	margin-right: 11px;
+}
+.btn2icn:hover {
+	background: #696DC8;
+}
+.btn2icn:disabled {
+	background: #8A8A8A;
+	cursor: auto;
+}
+.btn2icn:active {
+	background-color: #797DDF;
+}
+

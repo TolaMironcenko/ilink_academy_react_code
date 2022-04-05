@@ -1,0 +1,17 @@
+.arrowbtn {
+	width: 56px;
+	height: 56px;
+	border: none;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+.arrowbtn:hover > svg > path {
+	stroke: #585CC6;
+}
+.arrowbtn:disabled {
+	cursor: auto;
+}
+.arrowbtn:disabled > svg > path {
+	stroke: #ADADAD;
+	background-color: #E0E0E0;
+}

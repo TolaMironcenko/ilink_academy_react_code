@@ -1,0 +1,22 @@
+.FeedbackCard {
+	position: relative;
+	width: 520px;
+	height: 280px;
+	padding: 24px;
+	background: #F5F5F5; 
+}
+.cardhead {
+	display: flex;
+	align-items: center;
+}
+.date {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+.info {
+	margin-left: 20px;
+}
+p {
+	margin-top:22px;
+}

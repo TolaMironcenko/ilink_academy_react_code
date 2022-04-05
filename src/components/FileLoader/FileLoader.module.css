@@ -1,0 +1,78 @@
+.fileLoader {
+  max-width: 265px;
+  /* height: 55px; */
+  padding: 15px;
+  background: #F5F5F5;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.inf {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.line {
+  width: 170px;
+  border: 4px solid #C2C4FF;
+  margin-top: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.progressline {
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  right: 58px;
+  border: 4px solid #585CC6;
+  border-radius: 5px;
+  animation: 4s linear 0s normal none infinite running progressline;
+}
+@keyframes progressline {
+  0% {
+    right: 174px;
+  }
+  50% {
+    right: 75px;
+  }
+  100% {
+    right: -4px;
+  }
+}
+.rotateloader {
+  width: 20px;
+  height: 20px;
+  animation: 1s linear 0s normal none infinite running rotateloader;
+  -webkit-animation: 1s linear 0s normal none infinite running rotateloader;
+}
+@keyframes rotateloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotateloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.redtrash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.redtrashbtn {
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background: #F5F5F5; 
+}

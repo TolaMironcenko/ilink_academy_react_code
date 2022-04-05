@@ -1,0 +1,20 @@
+.slider {
+	display: flex;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+}
+
+.slide {
+	width: 15px;
+	opacity: 0.3;
+	border: 4px solid #585CC6;
+	margin-right: 10px;
+	transition: 0.3s;
+}
+
+.active {
+	width: 35px;
+	opacity: 100;
+}

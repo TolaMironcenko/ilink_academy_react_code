@@ -1,0 +1,27 @@
+span {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #8A8A8A;
+}
+footer {
+	display: flex;
+	align-items: center;
+	padding: 20px 80px;
+	background: #FFFFFF;
+}
+.sociallinks {
+	margin-left: auto;
+	align-items: center;
+	list-style-type: none;
+	display: flex;
+}
+.link {
+	z-index: 3;
+	margin-left: 25px;
+}
+.link:hover > a > svg {
+	fill: #797DDF;
+}
