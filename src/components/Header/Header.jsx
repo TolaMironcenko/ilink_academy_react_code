@@ -3,10 +3,10 @@ import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
 import styles from './Header.module.css';
 
-const Header = () => {
+const Header = ({ avatar }) => {
 	return (
 		<header className={styles.header}>
-			<Avatar />
+			<Avatar image={avatar} />
 			<h1>Анатолий Миронченко</h1>
 			<div className={styles.logo}>
 				<svg

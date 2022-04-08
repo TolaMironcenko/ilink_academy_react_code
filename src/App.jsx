@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div style={{ background: '#585CC6' }}>
-      <Header />
+      <Header avatar={require('./Rectangle 1.png')} />
       <Ht
         style={{
           color: '#FFFFFF',
@@ -121,7 +121,7 @@ function App() {
           455.597L272.696 452.403Z"
         />
       </svg>
-      <FileLoader/>
+      <FileLoader />
     </div>
   );
 }
