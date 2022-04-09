@@ -37,6 +37,7 @@
 	padding: 12px;
 }
 .photo {
+	position: relative;
 	display: flex;
 	align-items: center;
 }
@@ -58,6 +59,7 @@
 	margin-left: 15px;
 }
 .description > svg {
+	margin-top: 11px;
 	width: 20px;
 	height: 20px;
 }

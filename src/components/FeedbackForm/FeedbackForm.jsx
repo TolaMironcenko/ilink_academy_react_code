@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 import Ht from '../Ht/Ht';
 import styles from './FeedbackForm.module.css'
 import FileLoader from '../FileLoader/FileLoader'
+import Fileinput from '../Fileinput/Fileinput';
 
 const FeedbackForm = ({
 	setSuccessFeedback,
@@ -31,6 +32,7 @@ const FeedbackForm = ({
 
 	const [name, setName] = useState('')
 	const [text, setText] = useState('')
+	const [maxlen, setMaxlen] = useState(0)
 
 	return (
 		<div
@@ -61,32 +63,37 @@ const FeedbackForm = ({
 						placeholder='Имя Фамилия'
 						onChange={(e) => { setName(e.target.value) }}
 					/>
-					<Button
-						style={{
-							width: '210px',
-							zIndex: '5',
-						}}
-						btntype='button2_icon'
-					>
-						<input className='inputFile' type='file' style={{display: 'none',}}/>
-						Загрузить фото
-					</Button>
+					<Fileinput style={{ marginTop: '33px' }} />
 				</div>
-				<FileLoader/>
+				<FileLoader />
 				<p>Все ли вам понравилось?</p>
-				<textarea
-					value={text}
-					className={styles.feedarea}
-					cols="30"
-					rows="10"
-					placeholder='Напишите пару слов о вашем опыте...'
-					onChange={(e) => { setText(e.target.value) }}
-				>
-				</textarea>
+				<div style={{ position: 'relative' }}>
+					<textarea
+						value={text}
+						className={styles.feedarea}
+						cols="30"
+						rows="10"
+						placeholder='Напишите пару слов о вашем опыте...'
+						onChange={(e) => { setText(e.target.value) }}
+						onKeyUp={(e) => setMaxlen(e.target.value.length)}
+						style={{ resize: 'none', }}
+					>
+					</textarea>
+					<label style={{
+						fontFamily: 'Gilroy',
+						fontStyle: 'normal',
+						fontWeight: '400',
+						fontSize: '10px',
+						lineHeight: '14px',
+						color: '#8A8A8A',
+						position: 'absolute',
+						bottom: '5px',
+						right: '5px',
+					}}>{maxlen}/200</label>
+				</div>
 				<div className={styles.feedsent}>
 					<Button onClick={() => {
 						setActive(false);
-						setFlashMessageActive(true);
 						if (name === '' || text === '') {
 							setSuccessFeedback(false);
 						} else {
@@ -97,8 +104,10 @@ const FeedbackForm = ({
 							}]);
 							setSuccessFeedback(true);
 						}
+						setFlashMessageActive(true);
 						setName('')
 						setText('')
+						var filedata = document.getElementsByName("avatarphoto");
 					}}
 						style={{ width: '200px', marginLeft: '0' }}
 						btntype='button2'

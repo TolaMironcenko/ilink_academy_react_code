@@ -1,0 +1,39 @@
+.fin {
+	width: 210px;
+	height: 52px;
+	box-sizing: border-box;
+}
+.btn2icn {
+	padding: 17px 28px;
+	position: relative;
+	border-radius: 2px;
+	width: 200px;
+	height: 52px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s;
+	background: #585CC6;
+	color: #FFFFFF;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.btn2icn>svg {
+	margin-right: 11px;
+}
+
+.btn2icn:hover {
+	background: #696DC8;
+}
+
+.btn2icn:disabled {
+	background: #8A8A8A;
+	cursor: auto;
+}
+
+.btn2icn:active {
+	background-color: #797DDF;
+}

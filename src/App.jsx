@@ -7,7 +7,6 @@ import Reviewes from './components/Reviewes/Reviewes';
 import FeedbackForm from './components/FeedbackForm/FeedbackForm';
 import { useState } from 'react';
 import FlashMessageSuccess from './components/FlashMessage/FlashMessage';
-import FileLoader from './components/FileLoader/FileLoader'
 
 function App() {
 
@@ -121,7 +120,6 @@ function App() {
           455.597L272.696 452.403Z"
         />
       </svg>
-      <FileLoader />
     </div>
   );
 }
